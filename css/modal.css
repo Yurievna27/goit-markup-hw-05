@@ -136,7 +136,7 @@
   left: 16px;
   transform: translateY(-50%);
   fill: #2e2f42;
-  transition-property: color;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -191,7 +191,7 @@
   border: 1px solid rgb(46 47 66 / 40%);
   border-radius: 2px;
   fill: currentColor;
-  transition-property: background-color;
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
