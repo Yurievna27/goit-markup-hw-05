@@ -128,9 +128,14 @@
   width: 264px;
   height: 40px;
   background-color: inherit;
-  transition-property: outline border;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 .footer-form-input::placeholder {
   font-weight: 400;
@@ -141,7 +146,7 @@
 }
 .footer-form-input:focus {
   outline: none;
-  border: 1px solid #31d0aa;
+  border-color: #31d0aa;
 }
 .footer-subscribe-btn {
   display: flex;
@@ -161,7 +166,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-subscribe-btn:hover {
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
   background-color: #31d0aa;
 }
 .footer-subscribe-icon {
