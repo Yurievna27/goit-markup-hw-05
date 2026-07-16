@@ -59,15 +59,16 @@
   height: 24px;
   background-color: #e7e9fc;
   color: #2e2f42;
-  transition-property: color background-color border;
+  transition-property: color, background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.modal-close-btn:hover {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   color: #fff;
   background-color: #404bbf;
-  border: 1px solid #404bbf;
+  border-color: #404bbf;
 }
 .modal-close {
   fill: currentColor;
@@ -134,7 +135,7 @@
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  fill: currentColor;
+  fill: #2e2f42;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -144,7 +145,7 @@
   border-color: #4d5ae5;
 }
 .modal-form-input:focus + .modal-form-icon {
-  color: #4d5ae5;
+  fill: #4d5ae5;
 }
 .modal-form-textarea {
   border: 1px solid rgb(46 47 66 / 40%);
@@ -201,6 +202,7 @@
   opacity: 0;
 }
 .modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-icon {
+  fill: #f4f4fd;
   background-color: #404bbf;
 }
 .modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-icon svg {
@@ -214,7 +216,7 @@
   color: #8e8f99;
 }
 .modal-form-link {
-  line-height: 1.33333;
+  line-height: (1.17/14px);
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
