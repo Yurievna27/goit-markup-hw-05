@@ -125,6 +125,9 @@
   max-width: 360px;
   min-height: 40px;
   color: #2e2f42;
+  transition-property: outline border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-icon {
   position: absolute;
@@ -132,6 +135,9 @@
   left: 16px;
   transform: translateY(-50%);
   fill: currentColor;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:focus {
   outline: none;
@@ -152,6 +158,9 @@
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #2e2f42;
+  transition-property: outline border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-textarea::placeholder {
   color: rgb(46 47 66 / 40%);

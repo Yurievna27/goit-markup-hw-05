@@ -128,6 +128,9 @@
   width: 264px;
   height: 40px;
   background-color: inherit;
+  transition-property: outline border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-input::placeholder {
   font-weight: 400;
@@ -154,6 +157,9 @@
   background-color: #4d5ae5;
   color: #fff;
   border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-subscribe-btn:hover {
   background-color: #31d0aa;
